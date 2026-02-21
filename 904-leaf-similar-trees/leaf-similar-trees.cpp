@@ -22,10 +22,6 @@ public:
         vector<int>r2;
         Leafvector(root1,r1);
         Leafvector(root2,r2);
-        if(r1.size()!=r2.size())return false;
-        for(int i =0;i<r1.size();i++){
-            if(r1[i]!=r2[i])return false;
-        }
-        return true;
+        return r1==r2;
     }
 };
